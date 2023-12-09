@@ -49,6 +49,7 @@ class Logic(QMainWindow, Ui_MainWindow):
                     and re.search('[0-9]{3}-[0-9]{2}-[0-9]{4}', self.ssn_input.text())):
                 self.__voterHold.append(self.l_name_input.text())
                 self.__voterHold.append(self.f_name_input.text())
+                self.__voterHold.append(self.ssn_input.text())
                 if self.__radioValue == 1:
                     self.__voterHold.append("Cameron")
                 elif self.__radioValue == 2:
